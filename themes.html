@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Preview</title>
+    <!-- Default theme -->
+    <link rel="stylesheet" id="themeStylesheet" href="theme1.css">
+
+    <script>
+        function switchTheme(themeName) {
+            document.getElementById("themeStylesheet").href = themeName + ".css";
+        }
+    </script>
+</head>
+<body>
+    <h1>Theme Preview Page</h1>
+    <h2>Subheading Example</h2>
+    <p>This is a sample paragraph to test different themes. The styling should change based on the selected theme.</p>
+    
+    <h3>Lists</h3>
+    <ul>
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+    </ul>
+    <ol>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ol>
+    
+    <h3>Links</h3>
+    <p>Check out <a href="#">this sample link</a> to see how anchor tags are styled.</p>
+    
+    <h3>Change Theme</h3>
+    <div class="themes">
+        <select id="themeSelector" onchange="switchTheme(this.value)">
+            <option value="theme1">Theme 1</option>
+            <option value="theme2">Theme 2</option>
+            <option value="theme3">Theme 3</option>
+            <option value="theme4">Theme 4</option>
+            <option value="theme5">Theme 5</option>
+        </select>
+    </div>
+</body>
+</html>
